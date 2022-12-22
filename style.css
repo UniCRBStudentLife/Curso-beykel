@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(q.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+.menu{
+    width: 500px;
+    height: 200px;
+    padding: 0;
+    float: left;
+    height: 70px;
+    position: absolute;
+    left:0 ;
+    top: 10px;
+    
+   
+    
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #178ad6;
+}
+.search{
+    position: absolute;
+
+    left: 450px;
+    top: 10px;
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+   
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #178ad6;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #178ad6;
+    border: 2px solid #178ad6;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #178ad6;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: #fff;
+    
+}
+.content span{
+    color: #178ad6;
+    font-size: 65px}
+
+    .logo{
+       
+      color: #178ad6;
+        font-size: 35px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer {
+            margin-top: 70px;
+            background: #1d1e1e;
+            text-align: center;
+            padding-top: 2px;
+            padding-bottom: 20px;
+        }
+        
+        .copyright p {
+            color: #fff;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: left;
+            font-weight: normal;
+        
+        }
+        
+        .copyright a {
+            color: #fff;
+        }
+        
+        .copyright a:hover {
+            color: #e50444;
+        
+        }
+        .content .cn{
+            color: #fff;
+            width: 160px;
+            height: 40px;
+            background: #00ff6a;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;}
+
+            /** contact **/
+.contact {
+    padding-top: 20px;
+    background: transparent;
+}
+
+.main_form .form_control {
+    padding: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    color: #e40a0a;
+    font-size: 15px;
+    font-weight: normal;
+    border: inherit;
+    border-bottom: #3f3db8 solid 1px;
+}
+
+.main_form .form_cont {
+    margin-top: 60px;
+    margin-bottom: 87px;
+    width: 100%;
+    background: transparent;
+    color: #c20b0b !important;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px 0px 0px 0px;
+    height: 35px;
+    border: inherit;
+    border-bottom: #3b10b3 solid 1px;
+}
+
+.main_form .send_btn {
+    font-size: 10px;
+    transition: ease-in all 0.5s;
+    background-color: #111111;
+    color: #fff;
+    max-width: 185px;
+    width: 100%;
+    font-weight: 600;
+    height: 78px;
+    line-height: 78px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.main_form .send_btn:hover {
+    background-color: #e50444;
+    transition: ease-in all 0.5s;
+}
+
+#request *::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+ul.top_infomation {
+    padding-top: 100px;
+}
+
+ul.top_infomation li {
+    color: #111;
+    padding-bottom: 20px;
+}
+
+ul.top_infomation li a {
+    display: flex;
+}
+
+ul.top_infomation li a i {
+    margin-right: 8px;
+    text-align: center;
+    width: 47px;
+}
+
+ul.top_infomation li span {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    margin-bottom: -7px;
+}
+
+ul.top_infomation li p {
+    color: rgb(252, 250, 250);
+    line-height: 18px;
+    padding-top: 5px;
+}
+
+/** end contact **/
+
+@media screen and (max-width:800px) {
+ .menu{
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
+ }   
+}
